@@ -45,12 +45,10 @@ export default function Home() {
 
       <Script
         src="/assets/js/ScrollTrigger.min.js"
-        strategy="beforeInteractive"
-      />
+        strategy="beforeInteractive"/>
       <Script
         src="/assets/js/ScrollSmoother.min.js"
-        strategy="beforeInteractive"
-      />
+        strategy="beforeInteractive"/>
 
       <Script strategy="beforeInteractive" src="/assets/js/plugins.js"></Script>
       <Script

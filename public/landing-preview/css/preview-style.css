@@ -47,7 +47,7 @@ main {
   font-size: 100px;
   font-weight: 800;
   color: transparent;
-  -webkit-text-stroke: 2px #fd5b38;
+  -webkit-text-stroke: 2px #3459FC;
   -webkit-transform: translateY(10px);
   -ms-transform: translateY(10px);
   transform: translateY(10px);
@@ -102,9 +102,9 @@ main {
   left: 0;
   width: 100vw;
   height: 100vw;
-  background: -webkit-radial-gradient(circle, #ff3700 0%, transparent 66%);
-  background: -o-radial-gradient(circle, #ff3700 0%, transparent 66%);
-  background: radial-gradient(circle, #ff3700 0%, transparent 66%);
+  background: -webkit-radial-gradient(circle, #3459FC 0%, transparent 66%);
+  background: -o-radial-gradient(circle, #3459FC 0%, transparent 66%);
+  background: radial-gradient(circle, #3459FC 0%, transparent 66%);
   opacity: .2;
   z-index: -1;
 }

@@ -1,6 +1,6 @@
 
-$main_color: #fd5b38;
-$main_color2: #caff33;
+$main_color: #3459FC;
+$main_color2: #63C3F8;
 $body_color: #fff;
 $sub_bg: #121212;
 $sub_bg2: #000;
@@ -117,7 +117,7 @@ main{
         left: 0;
         width: 100vw;
         height: 100vw;
-        background: radial-gradient(circle, #ff3700 0%, transparent 66%);
+        background: radial-gradient(circle, #3459FC 0%, transparent 66%);
         opacity: .2;
         z-index: -1;
     }

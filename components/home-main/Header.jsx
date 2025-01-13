@@ -28,22 +28,21 @@ function Header() {
         <div className="row">
           <div className="col-lg-11">
             <div className="caption">
-              <h1>Best way to build</h1>
+              <h1>Innovation merged in Excellence for a</h1>
               <div className="d-flex align-items-end">
                 <div>
                   <h1 className="nowrap">
-                    <span className="main-color">great</span> website.
+                    <span className="main-color">great</span> product.
                   </h1>
                 </div>
                 <div>
                   <div className="text ml-30">
                     <p>
-                      We back the founders of new forms of network, digital
-                      organisations that harness the{' '}
+                      Imagine you have a dream, and you really desire to see it come to pass{' '}
                       <span className="text-light fw-600">
-                        talents of individuals
+                        no matter what it is,
                       </span>{' '}
-                      for the benefit of the collective.
+                      we make it possible for you.
                     </p>
                   </div>
                 </div>
@@ -59,7 +58,7 @@ function Header() {
           </div>
           <div className="col-lg-6 d-flex justify-content-end order-md-1">
             <div className="info">
-              <h2 className="mb-10">12k +</h2>
+              <h2 className="mb-10">132 +</h2>
               <h6>
                 Projects completed <br />
                 <span className="main-color">successfully</span>

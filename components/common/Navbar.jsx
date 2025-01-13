@@ -43,7 +43,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg bord blur">
       <div className="container o-hidden">
         <a className="logo icon-img-100" href="#">
-          <img src="/assets/imgs/logo-light.png" alt="logo" />
+          <img src="/assets/imgs/MustardWhite.webp" alt="MustardHQ Logo" />
         </a>
 
         <button
@@ -79,17 +79,17 @@ function Navbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="rolling-text">Demos</span>
+                <span className="rolling-text">Products</span>
               </a>
               <div className="dropdown-menu mega-menu">
                 <div className="container">
                   <div className="row">
                     <div className="col-lg">
-                      <a className="item-img text-center" href="/home-main">
+                      <a className="item-img text-center" href="/">
                         <span className="img">
                           <img src="/assets/imgs/menu/1.png" alt="" />
                         </span>
-                        <span className="mt-15">Main Home</span>
+                        <span className="mt-15">Home</span>
                       </a>
                     </div>
                     <div className="col-lg">
@@ -100,7 +100,7 @@ function Navbar() {
                         <span className="img">
                           <img src="/assets/imgs/menu/2.png" alt="" />
                         </span>
-                        <span className="mt-15">Modern Studio</span>
+                        <span className="mt-15">LabarinTech</span>
                       </a>
                     </div>
                     <div className="col-lg">
@@ -111,7 +111,7 @@ function Navbar() {
                         <span className="img">
                           <img src="/assets/imgs/menu/3.png" alt="" />
                         </span>
-                        <span className="mt-15">Creative Agency</span>
+                        <span className="mt-15">Spiritual Gift</span>
                       </a>
                     </div>
                     <div className="col-lg">
@@ -122,22 +122,34 @@ function Navbar() {
                         <span className="img">
                           <img src="/assets/imgs/menu/4.png" alt="" />
                         </span>
-                        <span className="mt-15">Digital Agency</span>
+                        <span className="mt-15">Canine Connect</span>
                       </a>
                     </div>
                     <div className="col-lg">
-                      <a className="item-img text-center" href="/home-personal">
+                      <a className="item-img text-center" href="https://blog.hansbello.com">
                         <span className="img">
                           <img src="/assets/imgs/menu/5.png" alt="" />
                         </span>
-                        <span className="mt-15">Freelancer</span>
+                        <span className="mt-15">Product Teardown Club</span>
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
             </li>
-            <li
+            <li className="nav-item">
+              <a className="nav-link" href="/page-services">
+                <span className="rolling-text">Services</span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/page-about">
+                <span className="rolling-text">About</span>
+              </a>
+            </li>
+            
+            {/* Other Pages */}
+            {/* <li
               onMouseLeave={handleDropdownMouseLeave}
               onMouseMove={handleDropdownMouseMove}
               className="nav-item dropdown"
@@ -178,11 +190,7 @@ function Navbar() {
                     Team Details
                   </a>
                 </li>
-                <li>
-                  <a className="dropdown-item" href="/page-contact">
-                    Contact Us
-                  </a>
-                </li>
+                
                 <li>
                   <a className="dropdown-item" href="/page-FAQ">
                     FAQS
@@ -194,8 +202,16 @@ function Navbar() {
                   </a>
                 </li>
               </ul>
+            </li> */}
+
+            <li className="nav-item">
+              <a className="nav-link" href="/portfolio-gallery">
+                <span className="rolling-text">Portfolio</span>
+              </a>
             </li>
-            <li
+
+
+            {/* <li
               onMouseLeave={handleDropdownMouseLeave}
               onMouseMove={handleDropdownMouseMove}
               className="nav-item dropdown"
@@ -233,8 +249,10 @@ function Navbar() {
                   Project Details
                 </a>
               </div>
-            </li>
-            <li
+            </li> */}
+
+
+            {/* <li
               onMouseLeave={handleDropdownMouseLeave}
               onMouseMove={handleDropdownMouseMove}
               className="nav-item dropdown"
@@ -263,12 +281,13 @@ function Navbar() {
                   Blog Details
                 </a>
               </div>
-            </li>
-            <li className="nav-item">
+            </li> */}
+            
+            {/* <li className="nav-item">
               <a className="nav-link" href="/page-contact">
                 <span className="rolling-text">Contact Us</span>
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
 
@@ -277,7 +296,7 @@ function Navbar() {
             href="/page-contact"
             className="butn butn-sm butn-bg main-colorbg radius-5"
           >
-            <span className="text">Let&apos;s contact</span>
+            <span className="text">Get Quote</span>
           </a>
         </div>
       </div>

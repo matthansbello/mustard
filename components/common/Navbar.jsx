@@ -95,7 +95,7 @@ function Navbar() {
                     <div className="col-lg">
                       <a
                         className="item-img text-center"
-                        href="/home-modern-studio"
+                        href="#"
                       >
                         <span className="img">
                           <img src="/assets/imgs/menu/2.png" alt="" />
@@ -106,7 +106,7 @@ function Navbar() {
                     <div className="col-lg">
                       <a
                         className="item-img text-center"
-                        href="/home-creative-agency"
+                        href="#"
                       >
                         <span className="img">
                           <img src="/assets/imgs/menu/3.png" alt="" />
@@ -117,7 +117,7 @@ function Navbar() {
                     <div className="col-lg">
                       <a
                         className="item-img text-center"
-                        href="/home-digital-agency"
+                        href="#"
                       >
                         <span className="img">
                           <img src="/assets/imgs/menu/4.png" alt="" />
@@ -126,7 +126,7 @@ function Navbar() {
                       </a>
                     </div>
                     <div className="col-lg">
-                      <a className="item-img text-center" href="https://blog.hansbello.com">
+                      <a className="item-img text-center" href="https://blog.hansbello.com" target="_blank">
                         <span className="img">
                           <img src="/assets/imgs/menu/5.png" alt="" />
                         </span>
@@ -137,13 +137,13 @@ function Navbar() {
                 </div>
               </div>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" href="/page-services">
                 <span className="rolling-text">Services</span>
               </a>
-            </li>
+            </li> */}
             <li className="nav-item">
-              <a className="nav-link" href="/page-about">
+              <a className="nav-link" href="/about">
                 <span className="rolling-text">About</span>
               </a>
             </li>
@@ -166,7 +166,7 @@ function Navbar() {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="/page-about">
+                  <a className="dropdown-item" href="/about">
                     About Us
                   </a>
                 </li>
@@ -284,7 +284,7 @@ function Navbar() {
             </li> */}
             
             {/* <li className="nav-item">
-              <a className="nav-link" href="/page-contact">
+              <a className="nav-link" href="/contact">
                 <span className="rolling-text">Contact Us</span>
               </a>
             </li> */}
@@ -293,7 +293,7 @@ function Navbar() {
 
         <div className="contact-button">
           <a
-            href="/page-contact"
+            href="/contact"
             className="butn butn-sm butn-bg main-colorbg radius-5"
           >
             <span className="text">Get Quote</span>

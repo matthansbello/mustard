@@ -7,7 +7,7 @@ import Footer from '@/components/common/Footer';
 import Marq2 from '@/components/common/Marq2';
 import Navbar from '@/components/common/Navbar';
 import Script from 'next/script';
-import Blog from '@/components/home-main/Blog';
+import Blog from '@/components/home/Blog';
 import Clients from '@/components/common/Clients';
 import Testimonials from '@/components/home-creative-agency/Testimonials';
 import Header from '@/components/page-FAQ/Header';

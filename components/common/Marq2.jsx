@@ -1,9 +1,9 @@
 import React from 'react';
 
 function Marq2() {
-  const marquess = ['Get In Touch']; // Replace with your actual array
+  const marquess = ['Ready to Evolve? Connect With Us']; // Replace with your actual array
   const AllMarquess = Array(6).fill(marquess).flat();
-  const contact = ['Contact Us']; // Replace with your actual array
+  const contact = ['Get Started Today.']; // Replace with your actual array
   const AllContact = Array(6).fill(contact).flat();
 
   return (
@@ -33,7 +33,7 @@ function Marq2() {
             ))}
           </div>
 
-          <a href="/page-contact" className="overlay-link"></a>
+          <a href="/contact" className="overlay-link"></a>
         </div>
       </div>
       <div className="main-marq bord-item">
@@ -57,7 +57,7 @@ function Marq2() {
             ))}
           </div>
 
-          <a href="/page-contact" className="overlay-link"></a>
+          <a href="/contact" className="overlay-link"></a>
         </div>
       </div>
     </section>

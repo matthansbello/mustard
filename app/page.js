@@ -3,25 +3,25 @@ import Lines from '@/components/common/Lines';
 import ProgressScroll from '@/components/common/ProgressScroll';
 import Cursor from '@/components/common/cusor';
 import LoadingScreen from '@/components/common/loader';
-import Clients from '@/components/home-main/Clients';
-import Feat from '@/components/home-main/Feat';
+import Clients from '@/components/home/Clients';
+import Feat from '@/components/home/Feat';
 import Footer from '@/components/common/Footer';
-import Header from '@/components/home-main/Header';
-import Intro from '@/components/home-main/Intro';
+import Header from '@/components/home/Header';
+import Intro from '@/components/home/Intro';
 import Marq2 from '@/components/common/Marq2';
 import Navbar from '@/components/common/Navbar';
-import Portfolio from '@/components/home-main/Portfolio';
-import Services from '@/components/home-main/Services';
-import Team from '@/components/home-main/Team';
-import Testimonials from '@/components/home-main/Testimonials';
+import Portfolio from '@/components/home/Portfolio';
+import Services from '@/components/home/Services';
+import Team from '@/components/home/Team';
+import Testimonials from '@/components/home/Testimonials';
 import Script from 'next/script';
-import Marq from '@/components/home-main/Marq';
+import Marq from '@/components/home/Marq';
 
 export const metadata = {
   title: 'MustardHQ',
   icons: {
-    icon: '/assets/imgs/favicon.ico',
-    shortcut: '/assets/imgs/favicon.ico',
+    icon: '/assets/imgs/favico.webp',
+    shortcut: '/assets/imgs/favicon.webp',
     other: generateStylesheetObject([
       '/assets/css/plugins.css',
       '/assets/css/style.css',
@@ -49,9 +49,8 @@ export default function Home() {
             <Services />
             <Portfolio />
             <Feat />
-            <Team />
             <Testimonials />
-            <Clients />
+            {/* <Clients /> */}
             <Marq2 />
           </main>
           <Footer />

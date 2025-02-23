@@ -48,7 +48,7 @@ function Header() {
                   </div>
                   <div className="d-flex align-items-center mt-60">
                     <a
-                      href="/page-contact"
+                      href="/contact"
                       className="butn butn-md butn-bord radius-30"
                     >
                       <span className="text">Contact Me</span>

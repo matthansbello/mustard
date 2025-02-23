@@ -55,7 +55,7 @@ function Header() {
                   </div>
                 </div>
                 <div>
-                  <a href="/page-about">
+                  <a href="/about">
                     <span className="ti-arrow-top-right"></span>
                   </a>
                 </div>

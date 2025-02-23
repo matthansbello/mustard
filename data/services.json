@@ -1,26 +1,26 @@
 [
   {
-    "title": "Digital Product Design",
-    "img": "/assets/imgs/serv-icons/3.png",
-    "desc": "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+    "title": "Product Management",
+    "img": "/assets/imgs/serv-icons/product-innovation|mustardhq.png",
+    "desc": "Navigate the Product Lifecycle with Confidence. MustardHQ's seasoned Product Managers bring strategic insights and hands-on experience to optimize your product roadmap.",
     "link": "/page-services-details"
   },
   {
     "title": "Web Developments",
-    "img": "/assets/imgs/serv-icons/4.png",
-    "desc": "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+    "img": "/assets/imgs/serv-icons/app-development|mustardhq.png",
+    "desc": "Streamline Your Online Presence. MustardHQ's Web Development services eliminate the complexities of building and maintaining a website. We deliver scalable, secure, and high-performing solutions that free you to focus on your core business.",
     "link": "/page-services-details"
   },
   {
-    "title": "Branding Design",
-    "img": "/assets/imgs/serv-icons/5.png",
-    "desc": "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+    "title": "Branding",
+    "img": "/assets/imgs/serv-icons/branding|mustardhq.png",
+    "desc": "We help you tell your brand story in a way that connects with your audience and builds trust.",
     "link": "/page-services-details"
   },
   {
-    "title": "UI-UX Design",
-    "img": "/assets/imgs/serv-icons/5.png",
-    "desc": "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+    "title": "Mobile App Development",
+    "img": "/assets/imgs/serv-icons/development|mustardhq.png",
+    "desc": "Innovative Mobile Solutions. We tackle your challenges with creative, user-centric apps for long-term success.",
     "link": "/page-services-details"
   }
 ]

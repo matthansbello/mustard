@@ -5,7 +5,7 @@ import Cursor from '@/components/common/cusor';
 import LoadingScreen from '@/components/common/loader';
 import Navbar from '@/components/common/Navbar';
 import Script from 'next/script';
-import Portfolio from '@/components/p-creative/Portfolio';
+// import Portfolio from '@/components/p-creative/Portfolio';
 
 export const metadata = {
   title: 'webfolio',
@@ -32,7 +32,7 @@ export default function Home() {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main className="main-bg o-hidden">
-            <Portfolio />
+            {/* <Portfolio /> */}
           </main>
         </div>
       </div>

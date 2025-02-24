@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 function Wroks2() {
@@ -5,7 +6,7 @@ function Wroks2() {
     <div className="section-padding pt-0">
       <div className="container">
         <div className="img">
-          <img src="/assets/imgs/works/3/6.jpg" alt="" />
+          <Image src="/assets/imgs/works/3/6.jpg" alt="" />
         </div>
       </div>
     </div>

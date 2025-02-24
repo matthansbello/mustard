@@ -21,7 +21,7 @@ export const metadata = {
   title: 'MustardHQ',
   icons: {
     icon: '/assets/imgs/favico.webp',
-    shortcut: '/assets/imgs/favicon.webp',
+    shortcut: '/assets/imgs/favico.webp',
     other: generateStylesheetObject([
       '/assets/css/plugins.css',
       '/assets/css/style.css',

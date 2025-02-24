@@ -3,6 +3,6 @@
   "/page": "app/page.js",
   "/portfolio-gallery/page": "app/portfolio-gallery/page.js",
   "/project-details/page": "app/project-details/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/about/page": "app/about/page.js"
+  "/about/page": "app/about/page.js",
+  "/contact/page": "app/contact/page.js"
 }

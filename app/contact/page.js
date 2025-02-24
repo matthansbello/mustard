@@ -11,10 +11,10 @@ import Contact from '@/components/contact/Contact';
 import Map from '@/components/contact/Map';
 
 export const metadata = {
-  title: 'MustardHQ',
+  title: 'Contact - MustardHQ',
   icons: {
-    icon: '/assets/imgs/favicon.ico',
-    shortcut: '/assets/imgs/favicon.ico',
+    icon: '/assets/imgs/favico.webp',
+    shortcut: '/assets/imgs/favico.webp',
     other: generateStylesheetObject([
       '/assets/css/plugins.css',
       '/assets/css/style.css',

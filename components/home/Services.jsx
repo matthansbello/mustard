@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 import data from '@/data/services';
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -38,7 +39,7 @@ function Services() {
               <span className="sub-title main-color mb-5">Our Specialization</span>
               <h3 className="fw-600 fz-50 text-u d-rotate wow">
                 <span className="rotate-text">
-                  Here're our <span className="fw-200">Strength.</span>
+                  Here&apos;re our <span className="fw-200">Strength.</span>
                 </span>
               </h3>
             </div>

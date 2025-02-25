@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '@/data/team-t';
+import Image from 'next/image';
 
 function Team() {
   return (

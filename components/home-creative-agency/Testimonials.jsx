@@ -3,6 +3,7 @@ import loadBackgroudImages from '@/common/loadBackgroudImages';
 import React, { useEffect } from 'react';
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from 'next/image';
 
 function Testimonials() {
   const swiperOptions = {

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 function Marq2() {
   const marquess = ['Ready to Evolve? Connect With Us']; // Replace with your actual array

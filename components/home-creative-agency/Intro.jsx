@@ -1,6 +1,7 @@
 'use client';
 import isInView from '@/common/isInView';
 import React, { useEffect } from 'react';
+import Image from 'next/image';
 
 function Intro() {
   function handleShowProgressValues() {

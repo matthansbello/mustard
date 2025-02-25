@@ -1,5 +1,6 @@
 'use client';
 import React, { useEffect } from 'react';
+import Image from 'next/image';
 import initIsotope2 from '@/common/initIsotope2';
 function Portfolio() {
   useEffect(() => {

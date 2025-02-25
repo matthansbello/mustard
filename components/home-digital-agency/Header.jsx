@@ -1,6 +1,7 @@
 'use client';
 import React, { useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
+import Image from 'next/image';
 function Header() {
   useLayoutEffect(() => {
     const tl = gsap.timeline();

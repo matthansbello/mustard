@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '@/data/services';
+import Image from 'next/image';
 
 function Services() {
   return (

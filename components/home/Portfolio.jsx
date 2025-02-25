@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import data from '@/data/portfolios/works1';
+import Image from 'next/image';
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 function Portfolio() {

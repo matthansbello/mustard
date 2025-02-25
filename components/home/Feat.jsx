@@ -14,7 +14,7 @@ function Feat() {
             <div className="cont md-mb50">
               <h6 className="sub-title main-color mb-15">Trusted Services</h6>
               <h3 className="mb-30">
-              We don't just build; we cultivate. 
+              We don&apos;t just build; we cultivate. 
               </h3>
               <p>
               Our portfolio showcases our expertise in ecosystem development and strategic architecture, designed to provide our clients with operational mastery and digital stewardship. We focus on continuity engineering and solution integration, empowering you with long-term, robust digital solutions that you fully own and control.

@@ -69,7 +69,7 @@ function Header() {
         <div className="info d-flex align-items-center justify-content-end mt-100">
           <div className="item">
             <h6 className="sub-title mb-10">Email :</h6>
-            <span className="p-color">Webfolio.Info@gmail.com</span>
+            <span className="p-color">MustardHQ.Info@gmail.com</span>
           </div>
           <div className="item">
             <h6 className="sub-title mb-10">Phone :</h6>

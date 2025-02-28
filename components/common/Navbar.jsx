@@ -44,7 +44,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg bord blur">
       <div className="container o-hidden">
         <a className="logo icon-img-100" href="#">
-          <img src="/assets/imgs/MustardWhite.webp" alt="MustardHQ Logo" />
+          <img src="/assets/imgs/brands/mustardhq-main-logo.webp" alt="MustardHQ Logo" />
         </a>
 
         <button
@@ -206,7 +206,7 @@ function Navbar() {
             </li> */}
 
             <li className="nav-item">
-              <a className="nav-link" href="/portfolio-gallery">
+              <a className="nav-link" href="/portfolio">
                 <span className="rolling-text">Portfolio</span>
               </a>
             </li>
@@ -228,7 +228,7 @@ function Navbar() {
                 <span className="rolling-text">Portfolio</span>
               </a>
               <div className="dropdown-menu">
-                <a className="dropdown-item" href="/portfolio-gallery">
+                <a className="dropdown-item" href="/portfolio">
                   Gallery
                 </a>
                 <a className="dropdown-item" href="/portfolio-creative">

@@ -8,7 +8,7 @@ function Footer() {
         <div className="row justify-content-between">
           <div className="col-lg-2">
             <div className="logo icon-img-100 md-mb80">
-              <img src="/assets/imgs/mustardlogo.webp" alt="MustardHQ Logo" />
+              <img src="/assets/imgs/brands/mustardhq-main-logo.webp" alt="MustardHQ Logo" />
             </div>
           </div>
           <div className="col-lg-4">

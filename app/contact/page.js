@@ -15,6 +15,8 @@ export const metadata = {
   icons: {
     icon: '/assets/imgs/favico.webp',
     shortcut: '/assets/imgs/favico.webp',
+    description: 'MustardHQ is a digital agency that specializes in web design, branding, and product management.',
+    image: '/assets/imgs/brands/mustardhq-for-meta.webp',
     other: generateStylesheetObject([
       '/assets/css/plugins.css',
       '/assets/css/style.css',

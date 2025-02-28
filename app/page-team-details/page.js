@@ -12,10 +12,10 @@ import Intro from '@/components/page-team-details/Intro';
 import Services from '@/components/page-team-details/Services';
 
 export const metadata = {
-  title: 'webfolio',
+  title: 'MustardHQ',
   icons: {
-    icon: '/assets/imgs/favicon.ico',
-    shortcut: '/assets/imgs/favicon.ico',
+    icon: '/assets/imgs/favico.webp',
+    shortcut: '/assets/imgs/favico.webp',
     other: generateStylesheetObject([
       '/assets/css/plugins.css',
       '/assets/css/style.css',

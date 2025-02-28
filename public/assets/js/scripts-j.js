@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: Webfolio
+    Theme Name: MustardHQ
     Theme URI: http://
     Description: Creative Agency & Portfolio
     Author: UiCamp

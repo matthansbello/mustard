@@ -1,7 +1,6 @@
 'use client';
 import React, { useEffect, useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
-import Image from 'next/image';
 import loadBackgroudImages from '@/common/loadBackgroudImages';
 function Header() {
   useLayoutEffect(() => {

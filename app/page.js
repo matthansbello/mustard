@@ -21,6 +21,8 @@ export const metadata = {
   title: 'MustardHQ',
   icons: {
     icon: '/assets/imgs/favico.webp',
+    description: 'MustardHQ is a digital agency that specializes in web design, branding, and product management.',
+    image: '/assets/imgs/brands/mustardhq-for-meta.webp',
     shortcut: '/assets/imgs/favico.webp',
     other: generateStylesheetObject([
       '/assets/css/plugins.css',
@@ -29,6 +31,7 @@ export const metadata = {
       'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap',
       'https://fonts.googleapis.com/css2?family=Jost:ital,wght@100,200,300,400,500,600,700,800,900&display=swap'
     ]),
+    
   },
 };
 

@@ -39,7 +39,7 @@ function Portfolio() {
             </div>
             <div className="ml-auto vi-more">
               <a
-                href="/portfolio-gallery"
+                href="/portfolio"
                 className="butn butn-sm butn-bord radius-30"
               >
                 <span>View All</span>

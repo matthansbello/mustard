@@ -20,8 +20,8 @@ function Footer() {
               <h6 className="mt-30 mb-15">
                 <a href="mailto:contact@mustardhq.org">contact@mustardhq.org</a>
               </h6>
-              <a href="tel:2348071771376" className="underline">
-                <span className="fz-22 main-color">+234 (807) 177 1376</span>
+              <a href="tel:2348129913595" className="underline">
+                <span className="fz-22 main-color">+234 (812) 991 3595</span>
               </a>
             </div>
           </div>

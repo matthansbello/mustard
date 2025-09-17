@@ -8,7 +8,8 @@ function Contact() {
           <div className="col-lg-4 valign">
             <div className="sec-head info-box full-width md-mb80">
               <div className="phone fz-30 fw-600 underline main-color">
-                <a href="tel:2348071771376">+234 807 177 1376</a>
+                
+                <a href="tel:2348129913595">+234 812 991 3595</a>
               </div>
               <div className="morinfo mt-50 pb-30 bord-thin-bottom">
                 <h6 className="mb-15">Address</h6>
@@ -16,7 +17,7 @@ function Contact() {
               </div>
               <div className="morinfo mt-30 pb-30 bord-thin-bottom">
                 <h6 className="mb-15">Email</h6>
-                <p>contact@mustardhq.org</p>
+                <p><a href='mailto:contact@mustardhq.org'>contact@mustardhq.org</a></p>
               </div>
 
               <div className="social-icon mt-50">
@@ -29,7 +30,7 @@ function Contact() {
                 <a href="https://linkedin.com/company/mustardhq" target="_blank">
                   <i className="fab fa-linkedin"></i>
                 </a>
-                <a href="https://instagram.com/mustardhq" target="_blank">
+                <a href="https://instagram.com/mustard.hq" target="_blank">
                   <i className="fab fa-instagram"></i>
                 </a>
               </div>
@@ -47,7 +48,7 @@ function Contact() {
                 id="contact-form"
                 className="form2"
                 method="post"
-                action="contact.php"
+                action=" "
               >
                 <div className="messages"></div>
 

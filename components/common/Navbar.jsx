@@ -43,7 +43,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bord blur">
       <div className="container o-hidden">
-        <a className="logo icon-img-100" href="#">
+        <a className="logo icon-img-100" href="/">
           <img src="/assets/imgs/brands/mustardhq-main-logo.webp" alt="MustardHQ Logo" />
         </a>
 
@@ -88,7 +88,7 @@ function Navbar() {
                     <div className="col-lg">
                       <a className="item-img text-center" href="/">
                         <span className="img">
-                          <img src="/assets/imgs/menu/1.png" alt="" />
+                          <img src="/assets/imgs/brands/mustardhq-for-home.webp" alt="" />
                         </span>
                         <span className="mt-15">Home</span>
                       </a>
@@ -99,7 +99,7 @@ function Navbar() {
                         href="#"
                       >
                         <span className="img">
-                          <img src="/assets/imgs/menu/2.png" alt="" />
+                          <img src="/assets/imgs/brands/mustardhq-for-comingsoon.webp" alt="" />
                         </span>
                         <span className="mt-15">LabarinTech</span>
                       </a>
@@ -110,7 +110,7 @@ function Navbar() {
                         href="#"
                       >
                         <span className="img">
-                          <img src="/assets/imgs/menu/3.png" alt="" />
+                          <img src="/assets/imgs/brands/mustardhq-for-comingsoon.webp" alt="" />
                         </span>
                         <span className="mt-15">Spiritual Gift</span>
                       </a>
@@ -121,7 +121,7 @@ function Navbar() {
                         href="#"
                       >
                         <span className="img">
-                          <img src="/assets/imgs/menu/4.png" alt="" />
+                          <img src="/assets/imgs/brands/mustardhq-for-comingsoon.webp" alt="" />
                         </span>
                         <span className="mt-15">Canine Connect</span>
                       </a>
@@ -129,7 +129,7 @@ function Navbar() {
                     <div className="col-lg">
                       <a className="item-img text-center" href="https://blog.hansbello.com" target="_blank">
                         <span className="img">
-                          <img src="/assets/imgs/menu/5.png" alt="" />
+                          <img src="/assets/imgs/brands/productteardownclub|mustardhq.webp" alt="" />
                         </span>
                         <span className="mt-15">Product Teardown Club</span>
                       </a>

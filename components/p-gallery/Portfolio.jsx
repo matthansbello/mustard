@@ -17,7 +17,7 @@ function Portfolio() {
                   <h6>Kiiwii Utility</h6>
                 </div>
                 <div className="ml-auto">
-                  <a href="/project-details">
+                  <a href="http://kiiwii.co" target="_blank">
                     <span className="ti-arrow-top-right"></span>
                   </a>
                 </div>
@@ -71,7 +71,7 @@ function Portfolio() {
                   <h6>Matthew Hans-Bello Brand</h6>
                 </div>
                 <div className="ml-auto">
-                  <a href="https://hansbello.com" target="_blank">
+                  <a href="https://www.hansbello.com" target="_blank">
                     <span className="ti-arrow-top-right"></span>
                   </a>
                 </div>
@@ -96,7 +96,7 @@ function Portfolio() {
               </div>
             </div>
           </div>
-          <div className="col-lg-8 offset-lg-2">
+          {/* <div className="col-lg-8 offset-lg-2">
             <div className="item mt-40">
               <div className="img">
                 <img src="/assets/imgs/works/grid/6.jpg" alt="" />
@@ -113,7 +113,7 @@ function Portfolio() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

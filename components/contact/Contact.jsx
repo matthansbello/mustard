@@ -5,15 +5,34 @@ function Contact() {
     <section className="contact section-padding">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 valign">
+          <div className="col-lg-12 valign">
             <div className="sec-head info-box full-width md-mb80">
-              <div className="phone fz-30 fw-600 underline main-color">
+              <h6 className="mb-15"></h6>
+              <div className="phone fz-30 fw-600 underline">
+              
                 
-                <a href="tel:2348129913595">+234 812 991 3595</a>
+                <a href="https://calendar.app.google/TUJ311uihLjpkZnF9" target='_blank'>CLICK TO BOOK A MEETING</a>
+              </div>
+              
+
+              
+            </div>
+          </div>
+          
+        </div>
+        
+        <div className="row">
+          <div className="col-lg-12 valign">
+            <div className="sec-head info-box full-width md-mb80">
+              <h6 className="mb-15">Number | WhatsApp</h6>
+              <div className="phone fz-30 fw-600 underline main-color">
+              
+                
+                <a href="tel:2348129913595" target='_blank'>+234 812 991 3595</a>, <a href="https://wa.me/message/IDWHG6YPE42MC1" target='_blank'>+234 807 177 1376</a>
               </div>
               <div className="morinfo mt-50 pb-30 bord-thin-bottom">
                 <h6 className="mb-15">Address</h6>
-                <p>6 Swomen Close, Rayfield, Jos, Nigeria</p>
+                <p>8 Swomen Close, Rayfield, Jos, Nigeria</p>
               </div>
               <div className="morinfo mt-30 pb-30 bord-thin-bottom">
                 <h6 className="mb-15">Email</h6>
@@ -27,7 +46,7 @@ function Contact() {
                 <a href="https://twitter.com/mustardhq" target="_blank">
                   <i className="fab fa-twitter"></i>
                 </a>
-                <a href="https://linkedin.com/company/mustardhq" target="_blank">
+                <a href="https://linkedin.com/company/mustardinnovations" target="_blank">
                   <i className="fab fa-linkedin"></i>
                 </a>
                 <a href="https://instagram.com/mustard.hq" target="_blank">
@@ -36,81 +55,7 @@ function Contact() {
               </div>
             </div>
           </div>
-          <div className="col-lg-7 offset-lg-1 valign">
-            <div className="full-width">
-              <div className="sec-head mb-50">
-                <h6 className="sub-title main-color mb-15">Let&lsquo;s Chat</h6>
-                <h3 className="text-u ls1">
-                  Send a <span className="fw-200">message</span>
-                </h3>
-              </div>
-              <form
-                id="contact-form"
-                className="form2"
-                method="post"
-                action=" "
-              >
-                <div className="messages"></div>
-
-                <div className="controls row">
-                  <div className="col-lg-6">
-                    <div className="form-group mb-30">
-                      <input
-                        id="form_name"
-                        type="text"
-                        name="name"
-                        placeholder="Name"
-                        required="required"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="col-lg-6">
-                    <div className="form-group mb-30">
-                      <input
-                        id="form_email"
-                        type="email"
-                        name="email"
-                        placeholder="Email"
-                        required="required"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="col-12">
-                    <div className="form-group mb-30">
-                      <input
-                        id="form_subject"
-                        type="text"
-                        name="subject"
-                        placeholder="Subject"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="col-12">
-                    <div className="form-group">
-                      <textarea
-                        id="form_message"
-                        name="message"
-                        placeholder="Message"
-                        rows="4"
-                        required="required"
-                      ></textarea>
-                    </div>
-                    <div className="mt-30">
-                      <button
-                        type="submit"
-                        className="butn butn-full butn-bord radius-30"
-                      >
-                        <span className="text">Let&lsquo;s Talk</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>

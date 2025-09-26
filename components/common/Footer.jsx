@@ -15,7 +15,7 @@ function Footer() {
             <div className="column md-mb50">
               <h6 className="sub-title mb-30">Contact</h6>
               <h6 className="p-color fw-400">
-                6 Swomen Close, Rayfield <br /> Jos, Nigeria
+                8 Swomen Close, Rayfield <br /> Jos, Nigeria
               </h6>
               <h6 className="mt-30 mb-15">
                 <a href="mailto:contact@mustardhq.org">contact@mustardhq.org</a>
@@ -38,8 +38,11 @@ function Footer() {
                 <li className="mb-15">
                   <a href="https://labarintech.com" target="_blank">Blog</a>
                 </li>
-                <li>
+                <li className="mb-15">
                   <a href="/contact">Contact</a>
+                </li>
+                <li className="mb-15">
+                  <a href="https://calendar.app.google/TUJ311uihLjpkZnF9">Get Quote</a>
                 </li>
               </ul>
             </div>

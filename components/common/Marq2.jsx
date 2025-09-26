@@ -34,7 +34,7 @@ function Marq2() {
             ))}
           </div>
 
-          <a href="/contact" className="overlay-link"></a>
+          <a href="https://calendar.app.google/TUJ311uihLjpkZnF9" className="overlay-link" target="_blank"></a>
         </div>
       </div>
       <div className="main-marq bord-item">

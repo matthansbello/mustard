@@ -32,9 +32,9 @@ function Intro() {
               <p>
               Our commitment is to the seamless integration of innovative thinking and meticulous execution, ensuring every solution we deliver embodies both excellence and delivers tangible outcomes.
               </p>
-              <a href="/contact" className="underline main-color mt-40">
+              <a href="https://calendar.app.google/TUJ311uihLjpkZnF9" className="underline main-color mt-40" target='_blank'>
                 <span className="text">
-                  Explore More <i className="ti-arrow-top-right"></i>
+                  Hear From Us <i className="ti-arrow-top-right"></i>
                 </span>
               </a>
             </div>

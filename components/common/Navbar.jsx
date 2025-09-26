@@ -85,26 +85,27 @@ function Navbar() {
               <div className="dropdown-menu mega-menu">
                 <div className="container">
                   <div className="row">
-                    <div className="col-lg">
+                    {/* <div className="col-lg">
                       <a className="item-img text-center" href="/">
                         <span className="img">
                           <img src="/assets/imgs/brands/mustardhq-for-home.webp" alt="" />
                         </span>
                         <span className="mt-15">Home</span>
                       </a>
-                    </div>
+                    </div> */}
                     <div className="col-lg">
                       <a
                         className="item-img text-center"
-                        href="#"
+                        href="https://www.labarintech.com"
+                        target='_blank'
                       >
                         <span className="img">
-                          <img src="/assets/imgs/brands/mustardhq-for-comingsoon.webp" alt="" />
+                          <img src="/assets/imgs/brands/labarintech-mustardhq.webp" alt="LabarinTech.com" />
                         </span>
                         <span className="mt-15">LabarinTech</span>
                       </a>
                     </div>
-                    <div className="col-lg">
+                    {/* <div className="col-lg">
                       <a
                         className="item-img text-center"
                         href="#"
@@ -114,7 +115,7 @@ function Navbar() {
                         </span>
                         <span className="mt-15">Spiritual Gift</span>
                       </a>
-                    </div>
+                    </div> */}
                     <div className="col-lg">
                       <a
                         className="item-img text-center"
@@ -211,6 +212,12 @@ function Navbar() {
               </a>
             </li>
 
+            <li className="nav-item">
+              <a className="nav-link" href="/contact">
+                <span className="rolling-text">Contact</span>
+              </a>
+            </li>
+
 
             {/* <li
               onMouseLeave={handleDropdownMouseLeave}
@@ -294,8 +301,9 @@ function Navbar() {
 
         <div className="contact-button">
           <a
-            href="/contact"
+            href="https://calendar.app.google/TUJ311uihLjpkZnF9"
             className="butn butn-sm butn-bg main-colorbg radius-5"
+            target='_blank'
           >
             <span className="text">Get Quote</span>
           </a>

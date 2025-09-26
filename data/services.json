@@ -1,7 +1,7 @@
 [
   {
     "title": "Product Management",
-    "img": "/assets/imgs/serv-icons/product-innovation|mustardhq.png",
+    "img": "/assets/imgs/serv-icons/product-innovation|mustardhq.webp",
     "desc": "Navigate the Product Lifecycle with Confidence. MustardHQ's seasoned Product Managers bring strategic insights and hands-on experience to optimize your product roadmap.",
     "link": "/page-services-details"
   },
@@ -19,7 +19,7 @@
   },
   {
     "title": "Mobile App Development",
-    "img": "/assets/imgs/serv-icons/development|mustardhq.png",
+    "img": "/assets/imgs/serv-icons/development|mustardhq.webp",
     "desc": "Innovative Mobile Solutions. We tackle your challenges with creative, user-centric apps for long-term success.",
     "link": "/page-services-details"
   }

@@ -96,6 +96,45 @@ function Portfolio() {
               </div>
             </div>
           </div>
+          {/* FOLA PR LIMITED */}
+          <div className="col-lg-8 offset-lg-2">
+            <div className="item mb-80 mt-40">
+              <div className="img">
+                <img src="/assets/imgs/works/mustardworks/fola|mustardhq.webp" alt="Fola PR Limited" />
+              </div>
+              <div className="cont d-flex align-items-end mt-30">
+                <div>
+                  <span className="p-color mb-5 sub-title">Web Design</span>
+                  <h6>Fola PR Limited</h6>
+                </div>
+                <div className="ml-auto">
+                  <a href="https://wewantfola.com" target="_blank">
+                    <span className="ti-arrow-top-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Aisha Sulaiman */}
+          {/* <div className="col-lg-5 offset-lg-2">
+            <div className="item mb-80 mt-40">
+              <div className="img">
+                <img src="/assets/imgs/works/mustardworks/aisha|mustardhq.webp" alt="Aisha Sulaiman Achimugu" />
+              </div>
+              <div className="cont d-flex align-items-end mt-30">
+                <div>
+                  <span className="p-color mb-5 sub-title">Web Development</span>
+                  <h6>Aisha Sulaiman Achimugu</h6>
+                </div>
+                <div className="ml-auto">
+                  <a href="#" target="_blank">
+                    <span className="ti-arrow-top-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div> */}
+
           {/* <div className="col-lg-8 offset-lg-2">
             <div className="item mt-40">
               <div className="img">

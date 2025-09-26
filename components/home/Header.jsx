@@ -32,17 +32,13 @@ function Header() {
               <div className="d-flex align-items-end">
                 <div>
                   <h1 className="nowrap">
-                    <span className="main-color">great</span> product.
+                    <span className="main-color">great</span> products.
                   </h1>
                 </div>
                 <div>
                   <div className="text ml-30">
                     <p>
-                    Mustard is the leading software development and training institute, renowned for its innovative solutions and commitment to excellence. With a focus on empowering businesses and individuals, we blend {' '}
-                      <span className="text-light fw-600">
-                      cutting-edge technology with top-tier training
-                      </span>{' '}
-                      to drive success in the ever-evolving tech landscape.
+                    Mustard is the leading software development and training institute, renowned for its innovative solutions and commitment to excellence.
                     </p>
                   </div>
                 </div>

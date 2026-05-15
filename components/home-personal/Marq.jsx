@@ -8,9 +8,9 @@ function Marq() {
     'Brand Strategy',
     'UI/UX Design',
     'Digital Marketing',
-    'Web Developement',
-    'Seo Mackting',
-    'Product Desgin',
+    'Web Development',
+    'Seo Marketing',
+    'Product Design',
   ];
   return (
     <section className="marq">

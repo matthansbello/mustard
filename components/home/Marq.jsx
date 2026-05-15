@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Marq() {
   const marquee = [
-    'UI/UX Desgin',
+    'UI/UX Design',
     'Web Development',
     'App Development',
     'Brand Management',

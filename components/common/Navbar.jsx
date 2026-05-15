@@ -95,7 +95,7 @@ function Navbar() {
                     </div> */}
 
                     {/* LABARINTECH */}
-                    {/* <div className="col-lg">
+                    <div className="col-lg">
                       <a
                         className="item-img text-center"
                         href="https://www.labarintech.com"
@@ -106,7 +106,7 @@ function Navbar() {
                         </span>
                         <span className="mt-15">LabarinTech</span>
                       </a>
-                    </div> */}
+                    </div>
                     {/* <div className="col-lg">
                       <a
                         className="item-img text-center"

@@ -1,105 +1,41 @@
-import generateStylesheetObject from '@/common/generateStylesheetsObject';
-import Lines from '@/components/common/Lines';
-import ProgressScroll from '@/components/common/ProgressScroll';
-import Cursor from '@/components/common/cusor';
-import LoadingScreen from '@/components/common/loader';
-import Footer from '@/components/common/Footer';
-import Marq2 from '@/components/common/Marq2';
-import Navbar from '@/components/common/Navbar';
-import Script from 'next/script';
-import Blog from '@/components/home/Blog';
-import Clients from '@/components/common/Clients';
-import Team from '@/components/home-modern-studio/Team';
-import Testimonials from '@/components/home/Testimonials';
+import { createPageMetadata } from '@/common/metadata';
+import PageLayout from '@/components/common/PageLayout';
 import Header from '@/components/about/Header';
 import Intro from '@/components/about/Intro';
+import Values from '@/components/about/Values';
 import Numbers from '@/components/about/Numbers';
+import Approach from '@/components/about/Approach';
+import Marq2 from '@/components/common/Marq2';
 import Services from '@/components/home/Services';
+import Testimonials from '@/components/home/Testimonials';
 
-export const metadata = {
-  title: 'About - MustardHQ',
-  icons: {
-    icon: '/assets/imgs/favico.webp',
-    shortcut: '/assets/imgs/favico.webp',
-    description: 'MustardHQ is a digital agency that specializes in web design, branding, and product management.',
-    image: '/assets/imgs/brands/mustardhq-for-meta.webp',
-    other: generateStylesheetObject([
-      '/assets/css/plugins.css',
-      '/assets/css/style.css',
-      'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap',
-      'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap',
-    ]),
-  },
-};
+import { BreadcrumbSchema } from '@/components/common/StructuredData';
 
-export default function Home() {
+export const metadata = createPageMetadata({
+  title: 'About',
+  path: '/about',
+  description:
+    'Meet MustardHQ — a full-service tech and media studio in Jos, Nigeria building web, product, and brand experiences with excellence, ownership, and long-term partnership.',
+  keywords: ['about MustardHQ', 'digital studio Jos', 'tech agency team'],
+});
+
+export default function About() {
   return (
-    <body>
-      <LoadingScreen />
-      <Cursor />
-      <ProgressScroll />
-      <Lines />
-      <Navbar />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
-          <main className="main-bg o-hidden">
-            <Header />
-            <Intro />
-            <Numbers />
-            <Services />
-            {/* <Team /> */}
-            <Testimonials />
-            {/* <Clients /> */}
-            {/* <Blog /> */}
-            <Marq2 />
-          </main>
-          <Footer />
-        </div>
-      </div>
-
-      <Script
-        src="/assets/js/ScrollTrigger.min.js"
-        strategy="beforeInteractive"
+    <PageLayout>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', path: '/' },
+          { name: 'About', path: '/about' },
+        ]}
       />
-      <Script
-        src="/assets/js/ScrollSmoother.min.js"
-        strategy="beforeInteractive"
-      />
-
-      <Script strategy="beforeInteractive" src="/assets/js/plugins.js"></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/TweenMax.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/charming.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/countdown.js"
-      ></Script>
-
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/gsap.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/splitting.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/isotope.pkgd.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/imgReveal/imagesloaded.pkgd.min.js"
-      ></Script>
-
-      {/* <Script src="/assets/js/smoother-script.js" strategy="lazyOnload" /> */}
-
-      <Script src="/assets/js/scripts.js"></Script>
-    </body>
+      <Header />
+      <Intro />
+      <Numbers />
+      <Values />
+      <Services />
+      <Approach />
+      <Testimonials />
+      <Marq2 />
+    </PageLayout>
   );
 }

@@ -1,88 +1,30 @@
-import generateStylesheetObject from '@/common/generateStylesheetsObject';
-import Lines from '@/components/common/Lines';
-import ProgressScroll from '@/components/common/ProgressScroll';
-import Cursor from '@/components/common/cusor';
-import LoadingScreen from '@/components/common/loader';
-import Footer from '@/components/common/Footer';
-import Navbar from '@/components/common/Navbar';
-import Script from 'next/script';
+import { createPageMetadata } from '@/common/metadata';
+import PageLayout from '@/components/common/PageLayout';
 import Header from '@/components/contact/Header';
 import Contact from '@/components/contact/Contact';
 import Map from '@/components/contact/Map';
+import { BreadcrumbSchema } from '@/components/common/StructuredData';
 
-export const metadata = {
-  title: 'Contact - MustardHQ',
-  icons: {
-    icon: '/assets/imgs/favico.webp',
-    shortcut: '/assets/imgs/favico.webp',
-    description: 'MustardHQ is a digital agency that specializes in web design, branding, and product management.',
-    image: '/assets/imgs/brands/mustardhq-for-meta.webp',
-    other: generateStylesheetObject([
-      '/assets/css/plugins.css',
-      '/assets/css/style.css',
-      'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap',
-      'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap',
-    ]),
-  },
-};
+export const metadata = createPageMetadata({
+  title: 'Contact',
+  path: '/contact',
+  description:
+    'Get in touch with MustardHQ. Book a meeting, message us on WhatsApp, or email our team in Jos, Nigeria. We respond within 24 hours.',
+  keywords: ['contact MustardHQ', 'hire web designer Nigeria', 'book a meeting'],
+});
 
-export default function Home() {
+export default function ContactPage() {
   return (
-    <body>
-      <LoadingScreen />
-      <Cursor />
-      <ProgressScroll />
-      <Lines />
-      <Navbar />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
-          <main className="main-bg o-hidden">
-            <Header />
-            <Contact />
-            <Map />
-          </main>
-          <Footer />
-        </div>
-      </div>
-      <Script
-        src="/assets/js/ScrollTrigger.min.js"
-        strategy="beforeInteractive"
+    <PageLayout>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', path: '/' },
+          { name: 'Contact', path: '/contact' },
+        ]}
       />
-      <Script
-        src="/assets/js/ScrollSmoother.min.js"
-        strategy="beforeInteractive"
-      />
-      <Script strategy="beforeInteractive" src="/assets/js/plugins.js"></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/TweenMax.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/charming.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/countdown.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/gsap.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/splitting.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/isotope.pkgd.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/imgReveal/imagesloaded.pkgd.min.js"
-      ></Script>
-      {/* <Script src="/assets/js/smoother-script.js" strategy="lazyOnload" /> */}
-      <Script src="/assets/js/scripts.js"></Script>{' '}
-    </body>
+      <Header />
+      <Contact />
+      <Map />
+    </PageLayout>
   );
 }

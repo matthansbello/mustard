@@ -3,11 +3,13 @@ import React, { useEffect } from 'react';
 
 function Cursor() {
   useEffect(() => {
-    const link = document.querySelectorAll('.hover-this');
     const cursor = document.querySelector('.cursor');
+    if (!cursor) return undefined;
 
     const animateit = function (e) {
       const hoverAnim = this.querySelector('.hover-anim');
+      if (!hoverAnim) return;
+
       const { offsetX: x, offsetY: y } = e;
       const { offsetWidth: width, offsetHeight: height } = this;
       const move = 25;
@@ -20,21 +22,41 @@ function Cursor() {
 
     const editCursor = (e) => {
       const { clientX: x, clientY: y } = e;
-      cursor.style.left = x + 'px';
-      cursor.style.top = y + 'px';
+      cursor.style.left = `${x}px`;
+      cursor.style.top = `${y}px`;
     };
-    link.forEach((b) => b.addEventListener('mousemove', animateit));
-    link.forEach((b) => b.addEventListener('mouseleave', animateit));
+
+    const activateCursor = () => cursor.classList.add('cursor-active');
+    const deactivateCursor = () => cursor.classList.remove('cursor-active');
+
+    const hoverTargets = document.querySelectorAll('.hover-this');
+    const pointerTargets = document.querySelectorAll('a, .cursor-pointer');
+
+    hoverTargets.forEach((element) => {
+      element.addEventListener('mousemove', animateit);
+      element.addEventListener('mouseleave', animateit);
+    });
+
+    pointerTargets.forEach((element) => {
+      element.addEventListener('mouseenter', activateCursor);
+      element.addEventListener('mouseleave', deactivateCursor);
+    });
+
     window.addEventListener('mousemove', editCursor);
 
-    document.querySelectorAll('a, .cursor-pointer').forEach((el) => {
-      el.addEventListener('mousemove', () => {
-        cursor.classList.add('cursor-active');
+    return () => {
+      hoverTargets.forEach((element) => {
+        element.removeEventListener('mousemove', animateit);
+        element.removeEventListener('mouseleave', animateit);
       });
-      el.addEventListener('mouseleave', () => {
-        cursor.classList.remove('cursor-active');
+
+      pointerTargets.forEach((element) => {
+        element.removeEventListener('mouseenter', activateCursor);
+        element.removeEventListener('mouseleave', deactivateCursor);
       });
-    });
+
+      window.removeEventListener('mousemove', editCursor);
+    };
   }, []);
 
   return <div className="cursor"></div>;

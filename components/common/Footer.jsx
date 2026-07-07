@@ -1,96 +1,150 @@
 import React from 'react';
-import Image from 'next/image';
+import { SITE } from '@/common/site-config';
+
+const YEAR = new Date().getFullYear();
 
 function Footer() {
   return (
-    <footer className="clean-footer crev">
-      <div className="container pb-40 pt-40 ontop">
-        <div className="row justify-content-between">
-          <div className="col-lg-2">
-            <div className="logo icon-img-100 md-mb80">
-              <img src="/assets/imgs/brands/mustardhq-main-logo.webp" alt="MustardHQ Logo" />
-            </div>
+    <footer className="futuro-footer">
+      <span className="hero-grid" aria-hidden="true" />
+      <div className="container">
+        <div className="foot-cta">
+          <div>
+            <span className="hud-chip mb-30 d-inline-flex">
+              <span className="dot" aria-hidden="true" />
+              Let&apos;s build together
+            </span>
+            <h2>
+              Ready to <span className="grad-text">evolve?</span>
+            </h2>
           </div>
-          <div className="col-lg-4">
-            <div className="column md-mb50">
-              <h6 className="sub-title mb-30">Contact</h6>
-              <h6 className="p-color fw-400">
-                8 Swomen Close, Rayfield <br /> Jos, Nigeria
-              </h6>
-              <h6 className="mt-30 mb-15">
-                <a href="mailto:contact@mustardhq.org">contact@mustardhq.org</a>
-              </h6>
-              <a href="tel:2348129913595" className="underline">
-                <span className="fz-22 main-color">+234 (812) 991 3595</span>
+          <a
+            href={SITE.calendar}
+            className="butn butn-md butn-bg main-colorbg radius-30 magnetic"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="text">Start a Project</span>
+          </a>
+        </div>
+
+        <div className="foot-grid">
+          <div className="foot-col foot-brand">
+            <div className="logo icon-img-100">
+              <img
+                src="/assets/imgs/brands/mustardhq-main-logo.webp"
+                alt="MustardHQ Logo"
+              />
+            </div>
+            <p>
+              A digital product studio engineering future-ready web, product,
+              and brand experiences from Jos, Nigeria to the world.
+            </p>
+            <div className="foot-social">
+              <a
+                href={SITE.social.twitter}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="MustardHQ on X"
+              >
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a
+                href={SITE.social.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="MustardHQ on LinkedIn"
+              >
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href={SITE.social.instagram}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="MustardHQ on Instagram"
+              >
+                <i className="fab fa-instagram"></i>
               </a>
             </div>
           </div>
-          <div className="col-lg-2">
-            <div className="column md-mb50">
-              <h6 className="sub-title mb-30">Useful Links</h6>
-              <ul className="rest fz-14 opacity-7">
-                <li className="mb-15">
-                  <a href="/about">About</a>
-                </li>
-                {/* <li className="mb-15">
-                  <a href="/page-services">Services</a>
-                </li> */}
-                <li className="mb-15">
-                  <a href="https://labarintech.com" target="_blank">Blog</a>
-                </li>
-                <li className="mb-15">
-                  <a href="/contact">Contact</a>
-                </li>
-                <li className="mb-15">
-                  <a href="https://calendar.app.google/TUJ311uihLjpkZnF9">Get Quote</a>
-                </li>
-              </ul>
-            </div>
+
+          <div className="foot-col foot-links">
+            <h6 className="k">Navigate</h6>
+            <ul className="rest">
+              <li>
+                <a href="/about">About</a>
+              </li>
+              <li>
+                <a href="/portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="/contact">Contact</a>
+              </li>
+              <li>
+                <a href={SITE.products.blog} target="_blank" rel="noreferrer">
+                  Blog
+                </a>
+              </li>
+            </ul>
           </div>
-          <div className="col-lg-3">
-            <div className="column subscribe-minimal">
-              {/* <h6 className="sub-title mb-30">Newsletter</h6> */}
-              {/* <div className="form-group mb-40">
-                <input type="text" name="subscrib" placeholder="Your Email" />
-                <button>
-                  <span className="ti-location-arrow"></span>
-                </button>
-              </div> */}
-              <ul className="rest social-icon d-flex align-items-center">
-                {/* <li className="hover-this cursor-pointer">
-                  <a href="#0" className="hover-anim" target="_blank">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </li> */}
-                <li className="hover-this cursor-pointer ml-10">
-                  <a href="https://x.com/mustardhq" className="hover-anim" target="_blank">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li className="hover-this cursor-pointer ml-10">
-                  <a href="https://www.linkedin.com/company/mustardinnovations" className="hover-anim" target="_blank">
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li className="hover-this cursor-pointer ml-10">
-                  <a href="https://instagram.com/mustardhq" className="hover-anim" target="_blank">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+
+          <div className="foot-col foot-links">
+            <h6 className="k">Products</h6>
+            <ul className="rest">
+              <li>
+                <a
+                  href={SITE.products.labarintech}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LabarinTech
+                </a>
+              </li>
+              <li>
+                <a
+                  href={SITE.products.productTeardown}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Product Teardown
+                </a>
+              </li>
+              <li>
+                <a href={SITE.calendar} target="_blank" rel="noreferrer">
+                  Get a Quote
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="foot-col foot-contact">
+            <h6 className="k">Contact</h6>
+            <p className="p-color mb-15">
+              {SITE.addressLines.map((line) => (
+                <React.Fragment key={line}>
+                  {line}
+                  <br />
+                </React.Fragment>
+              ))}
+            </p>
+            <p className="mb-10">
+              <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+            </p>
+            <p>
+              <a href={SITE.phoneTel} className="main-color fz-22">
+                {SITE.phone}
+              </a>
+            </p>
           </div>
         </div>
-        <div className="pt-30 pb-30 mt-80 bord-thin-top">
-          <div className="text-center">
-            <p className="fz-14">
-              © 2025 Mustard Innovations & Technologies Limited.
-              </p>
-          </div>
+
+        <div className="foot-bottom">
+          <span className="status">
+            <span className="dot" aria-hidden="true" />
+            All systems operational
+          </span>
+          <p>© {YEAR} Mustard Innovations &amp; Technologies Limited.</p>
         </div>
-      </div>
-      <div className="circle-blur">
-        <img src="/assets/imgs/patterns/blur1.png" alt="" />
       </div>
     </footer>
   );

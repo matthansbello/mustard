@@ -1,42 +1,59 @@
-import Image from 'next/image';
 import React from 'react';
+import { SITE } from '@/common/site-config';
 
 function Intro() {
   return (
-    <section className="page-intro section-padding pb-0">
+    <section className="about-manifesto section-padding">
       <div className="container">
-        <div className="row md-marg">
+        <div className="row lg-marg align-items-center">
+          <div className="col-lg-6 md-mb80">
+            <span className="hud-chip mb-30 d-inline-flex reveal">
+              <span className="dot" aria-hidden="true" />
+              Who We Are
+            </span>
+            <h2 className="am-lead reveal">
+              A full-service <span className="grad-text">tech &amp; media</span>{' '}
+              studio building digital products as a means of worship.
+            </h2>
+            <p className="am-body mt-30 reveal">
+              We integrate innovative thinking with meticulous execution, so
+              every solution we deliver embodies excellence and produces tangible
+              outcomes. From first sketch to final ship, we build things that
+              last and that you fully own.
+            </p>
+            <a
+              href={SITE.calendar}
+              className="butn butn-md butn-bg main-colorbg radius-30 mt-40 magnetic reveal"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className="text">Work With Us</span>
+            </a>
+          </div>
+
           <div className="col-lg-6">
-            <div className="img md-mb80">
-              <div className="row">
-                <div className="col-6">
-                  <img src="/assets/imgs/intro/female-dev|mustardhq.webp" alt="" />
-                  <div className="img-icon">
-                    <img src="/assets/imgs/arw0.png" alt="" />
-                  </div>
-                </div>
-                <div className="col-6 mt-40">
-                  <img src="/assets/imgs/intro/male-dev|mustardhq.webp" alt="" />
+            <div className="row md-marg align-items-center">
+              <div className="col-8">
+                <div className="am-figure hud-frame reveal reveal-scale">
+                  <img
+                    src="/assets/imgs/Mustard-Intro.webp"
+                    alt="MustardHQ team at work"
+                  />
+                  <span className="am-badge hud-chip">Est. Jos, NG</span>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="col-lg-6 valign">
-            <div className="cont">
-              <h3 className="mb-30">
-                Mustard is a full-service{' '}
-                <span className="fw-200">tech and media</span> agency
-               <span className="fw-200">creating digital experiences</span> &
-                products <span className="fw-200">as a means of </span> worship.
-              </h3>
-              <p>
-              Our commitment is to the seamless integration of innovative thinking and meticulous execution, ensuring every solution we deliver embodies both excellence and delivers tangible outcomes.
-              </p>
-              <a href="https://calendar.app.google/TUJ311uihLjpkZnF9" className="underline main-color mt-40" target='_blank'>
-                <span className="text">
-                  Hear From Us <i className="ti-arrow-top-right"></i>
-                </span>
-              </a>
+              <div className="col-4">
+                <div className="am-side">
+                  <div className="am-fact glass-panel reveal">
+                    <span className="v grad-text">10+</span>
+                    <span className="k">Years Combined</span>
+                  </div>
+                  <div className="am-fact glass-panel reveal">
+                    <span className="v grad-text">4</span>
+                    <span className="k">Core Services</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
 import data from '@/data/testimonials';
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -23,17 +22,20 @@ function Testimonials() {
     <section className="testimonials">
       <div className="container section-padding bord-top-grd">
         <div className="row">
-          <div className="col-lg-4 md-mb50">
+          <div className="col-lg-4 md-mb50 reveal reveal-left">
             <div className="img-full">
               <div className="fit-img">
-                <img src="/assets/imgs/testim/testimony|mustardhq.webp" alt="" />
+                <img
+                  src="/assets/imgs/testim/testimony|mustardhq.webp"
+                  alt="Client testimonial"
+                />
               </div>
               <div className="fix-img">
-                <img src="/assets/imgs/arw1.png" alt="" />
+                <img src="/assets/imgs/arw1.png" alt="" role="presentation" />
               </div>
             </div>
           </div>
-          <div className="col-lg-8">
+          <div className="col-lg-8 reveal reveal-right">
             <div className="cont-full">
               <div
                 className="testim-swiper"
@@ -57,7 +59,7 @@ function Testimonials() {
                           <div className="info d-flex align-items-center pt-40 mt-40 bord-thin-top">
                             <div>
                               <div className="fit-img circle">
-                                <img src={item.img} alt="" />
+                                <img src={item.img} alt={item.name} />
                               </div>
                             </div>
                             <div className="ml-20">
@@ -99,7 +101,7 @@ function Testimonials() {
                 </div>
               </div>
               <div className="circle-blur">
-                <img src="/assets/imgs/patterns/blur1.png" alt="" />
+                <img src="/assets/imgs/patterns/blur1.png" alt="" role="presentation" />
               </div>
             </div>
           </div>

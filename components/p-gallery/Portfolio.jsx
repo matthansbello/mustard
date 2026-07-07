@@ -1,158 +1,112 @@
-import React from 'react';
-import Image from 'next/image';
+'use client';
+import React, { useMemo, useState } from 'react';
+import { PROJECTS, PROJECT_FILTERS as FILTERS, initials } from '@/common/content';
 
 function Portfolio() {
-  return (
-    <section className="work-grid pt-60 pb-60">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-5">
-            <div className="item mb-80 mt-40">
-              <div className="img">
-                <img src="/assets/imgs/works/mustardworks/kiiwii-by-mustardhq.webp" alt="" />
-              </div>
-              <div className="cont d-flex align-items-end mt-30">
-                <div>
-                  <span className="p-color mb-5 sub-title">Web App</span>
-                  <h6>Kiiwii Utility</h6>
-                </div>
-                <div className="ml-auto">
-                  <a href="http://kiiwii.co" target="_blank">
-                    <span className="ti-arrow-top-right"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-5 offset-lg-1">
-            <div className="item mb-80 mt-40">
-              <div className="img">
-                <img src="/assets/imgs/works/mustardworks/canine-by-mustardhq.webp" alt="Canine Connect" />
-              </div>
-              <div className="cont d-flex align-items-end mt-30">
-                <div>
-                  <span className="p-color mb-5 sub-title">Product</span>
-                  <h6>Canine Connect</h6>
-                </div>
-                <div className="ml-auto">
-                  <a href="https://canineconnect.com" target="_blank">
-                    <span className="ti-arrow-top-right"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-8 offset-lg-2">
-            <div className="item mb-80 mt-40">
-              <div className="img">
-                <img src="/assets/imgs/works/mustardworks/ymi|mustardhq.webp" alt="Youth Making Impact" />
-              </div>
-              <div className="cont d-flex align-items-end mt-30">
-                <div>
-                  <span className="p-color mb-5 sub-title">Web Design</span>
-                  <h6>Youth Making Impact</h6>
-                </div>
-                <div className="ml-auto">
-                  <a href="https://youthmakingimpact.org" target="_blank">
-                    <span className="ti-arrow-top-right"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-5 d-flex align-items-end">
-            <div className="item mb-80 mt-40">
-              <div className="img">
-                <img src="/assets/imgs/works/mustardworks/hansbello|mustardhq.webp" alt="Matthew Hans-Bello Brand" />
-              </div>
-              <div className="cont d-flex align-items-end mt-30">
-                <div>
-                  <span className="p-color mb-5 sub-title">Web Design & Branding</span>
-                  <h6>Matthew Hans-Bello Brand</h6>
-                </div>
-                <div className="ml-auto">
-                  <a href="https://www.hansbello.com" target="_blank">
-                    <span className="ti-arrow-top-right"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-5 offset-lg-2">
-            <div className="item mb-80 mt-40">
-              <div className="img">
-                <img src="/assets/imgs/works/mustardworks/tasckwebsite|mustardhq.webp" alt="TASCK Website" />
-              </div>
-              <div className="cont d-flex align-items-end mt-30">
-                <div>
-                  <span className="p-color mb-5 sub-title">Product Management & Development</span>
-                  <h6>TASCK Website </h6>
-                </div>
-                <div className="ml-auto">
-                  <a href="https://tasck.org" target="_blank">
-                    <span className="ti-arrow-top-right"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* FOLA PR LIMITED */}
-          <div className="col-lg-8 offset-lg-2">
-            <div className="item mb-80 mt-40">
-              <div className="img">
-                <img src="/assets/imgs/works/mustardworks/fola|mustardhq.webp" alt="Fola PR Limited" />
-              </div>
-              <div className="cont d-flex align-items-end mt-30">
-                <div>
-                  <span className="p-color mb-5 sub-title">Web Design</span>
-                  <h6>Fola PR Limited</h6>
-                </div>
-                <div className="ml-auto">
-                  <a href="https://wewantfola.com" target="_blank">
-                    <span className="ti-arrow-top-right"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Aisha Sulaiman */}
-          {/* <div className="col-lg-5 offset-lg-2">
-            <div className="item mb-80 mt-40">
-              <div className="img">
-                <img src="/assets/imgs/works/mustardworks/aisha|mustardhq.webp" alt="Aisha Sulaiman Achimugu" />
-              </div>
-              <div className="cont d-flex align-items-end mt-30">
-                <div>
-                  <span className="p-color mb-5 sub-title">Web Development</span>
-                  <h6>Aisha Sulaiman Achimugu</h6>
-                </div>
-                <div className="ml-auto">
-                  <a href="#" target="_blank">
-                    <span className="ti-arrow-top-right"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div> */}
+  const [filter, setFilter] = useState('All');
 
-          {/* <div className="col-lg-8 offset-lg-2">
-            <div className="item mt-40">
-              <div className="img">
-                <img src="/assets/imgs/works/grid/6.jpg" alt="" />
+  const counts = useMemo(() => {
+    const c = { All: PROJECTS.length };
+    FILTERS.slice(1).forEach((f) => {
+      c[f] = PROJECTS.filter((p) => p.tags.includes(f)).length;
+    });
+    return c;
+  }, []);
+
+  const visible = useMemo(
+    () =>
+      filter === 'All'
+        ? PROJECTS
+        : PROJECTS.filter((p) => p.tags.includes(filter)),
+    [filter]
+  );
+
+  return (
+    <section className="pf-work section-padding pt-60">
+      <div className="container">
+        <div className="pf-stats reveal">
+          <div>
+            <span className="v">{PROJECTS.length}</span>
+            <span className="k">Selected Projects</span>
+          </div>
+          <div>
+            <span className="v">{FILTERS.length - 1}</span>
+            <span className="k">Disciplines</span>
+          </div>
+          <div>
+            <span className="v">100%</span>
+            <span className="k">Client Owned</span>
+          </div>
+        </div>
+
+        <div className="pf-filter reveal" role="tablist" aria-label="Filter projects">
+          {FILTERS.map((f) => (
+            <button
+              key={f}
+              type="button"
+              role="tab"
+              aria-selected={filter === f}
+              className={filter === f ? 'active' : ''}
+              onClick={() => setFilter(f)}
+            >
+              {f}
+              <span className="count">{counts[f] ?? 0}</span>
+            </button>
+          ))}
+        </div>
+
+        <div className="pf-grid">
+          {visible.map((project, i) => (
+            <a
+              key={project.url}
+              href={project.url}
+              target="_blank"
+              rel="noreferrer"
+              className={`pf-card${i === 0 && filter === 'All' ? ' wide' : ''}`}
+              style={{ animationDelay: `${Math.min(i, 8) * 0.05}s` }}
+              aria-label={`${project.name} — ${project.cat} (opens in new tab)`}
+            >
+              <div className={`pf-media${project.img ? '' : ' placeholder'}`}>
+                {project.img ? (
+                  <img src={project.img} alt={`${project.name} — ${project.cat}`} />
+                ) : (
+                  <span className="mono" aria-hidden="true">
+                    {initials(project.name)}
+                  </span>
+                )}
+                <span className="pf-visit" aria-hidden="true">
+                  <span>
+                    Visit Site
+                    <svg viewBox="0 0 24 24" fill="none" width="14" height="14">
+                      <path
+                        d="M7 17L17 7M17 7H9M17 7v8"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </span>
               </div>
-              <div className="cont d-flex align-items-end mt-30">
+              <div className="pf-body">
                 <div>
-                  <span className="p-color mb-5 sub-title">Web Design</span>
-                  <h6>Figma Digital Agency</h6>
+                  <span className="pf-cat">{project.cat}</span>
+                  <h3>{project.name}</h3>
                 </div>
-                <div className="ml-auto">
-                  <a href="/project-details">
-                    <span className="ti-arrow-top-right"></span>
-                  </a>
-                </div>
+                <span className="pf-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M7 17L17 7M17 7H9M17 7v8"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
               </div>
-            </div>
-          </div> */}
+            </a>
+          ))}
         </div>
       </div>
     </section>

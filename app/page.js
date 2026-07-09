@@ -12,7 +12,7 @@ import Testimonials from '@/components/home/Testimonials';
 export const metadata = createPageMetadata({
   path: '/',
   description:
-    'MustardHQ is a digital product studio in Jos, Nigeria delivering web design, web development, branding, and product management for brands ready to evolve.',
+    'MustardHQ is a digital product studio in Jos, Nigeria delivering web design, web development, branding, product management, IT, and cybersecurity services for brands ready to evolve.',
 });
 
 export default function Home() {

@@ -22,5 +22,17 @@
     "img": "/assets/imgs/serv-icons/development|mustardhq.webp",
     "desc": "Innovative Mobile Solutions. We tackle your challenges with creative, user-centric apps for long-term success.",
     "link": "/contact"
+  },
+  {
+    "title": "Information Technology (IT)",
+    "img": "/assets/imgs/serv-icons/development|mustardhq.webp",
+    "desc": "End-to-end IT support for modern teams. We design, deploy, and maintain reliable infrastructure, systems, and workflows so your operations run smoothly and scale with confidence.",
+    "link": "/contact"
+  },
+  {
+    "title": "Cybersecurity Services",
+    "img": "/assets/imgs/serv-icons/product-innovation|mustardhq.webp",
+    "desc": "Protect what you build. We assess risk, harden systems, and implement security practices that safeguard your data, users, and reputation without slowing your business down.",
+    "link": "/contact"
   }
 ]

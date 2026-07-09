@@ -84,7 +84,7 @@ function Header() {
             <div className="h-aside">
               <p>
                 MustardHQ merges innovation with excellence — designing,
-                engineering, and branding products that endure.
+                engineering, branding, and securing products and systems that endure.
               </p>
               <div className="h-actions">
                 <a

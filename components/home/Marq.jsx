@@ -7,6 +7,8 @@ function Marq() {
     'App Development',
     'Brand Management',
     'Product Management',
+    'Information Technology',
+    'Cybersecurity Services',
   ];
 
   const renderItems = (keyPrefix) =>

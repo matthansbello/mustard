@@ -5,7 +5,7 @@ export const COMPANY = {
   intro:
     'A full-service tech and media studio building digital products as a means of worship. We integrate innovative thinking with meticulous execution, so every solution embodies excellence and produces tangible outcomes.',
   mission:
-    'We build web, product, and brand experiences that last, and that our clients fully own and control, from first sketch to final ship and beyond.',
+    'We build web, product, brand, IT, and cybersecurity solutions that last, and that our clients fully own and control, from first sketch to final ship and beyond.',
 };
 
 export const STATS = [
@@ -65,6 +65,14 @@ export const CAPABILITIES = [
   {
     title: 'Strategic Branding',
     desc: 'Architectures that define your digital presence, ensuring consistency and lasting impact across every touchpoint.',
+  },
+  {
+    title: 'Information Technology (IT)',
+    desc: 'Managed infrastructure, systems integration, and technical operations that keep your business running reliably day to day.',
+  },
+  {
+    title: 'Cybersecurity Services',
+    desc: 'Risk assessments, security hardening, and proactive protection so your platforms, data, and users stay safe as you grow.',
   },
 ];
 

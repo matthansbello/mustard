@@ -5,7 +5,7 @@ export const SITE = {
   locale: 'en_US',
   tagline: 'Digital Product Studio',
   description:
-    'MustardHQ is a digital product studio in Jos, Nigeria specializing in web design, web development, branding, and product management for ambitious brands worldwide.',
+    'MustardHQ is a digital product studio in Jos, Nigeria specializing in web design, web development, branding, product management, information technology (IT), and cybersecurity services for ambitious brands worldwide.',
   keywords: [
     'MustardHQ',
     'digital agency Nigeria',
@@ -14,6 +14,10 @@ export const SITE = {
     'product management',
     'branding agency',
     'mobile app development',
+    'information technology services',
+    'IT services Nigeria',
+    'cybersecurity services',
+    'cybersecurity Nigeria',
     'UI UX design',
     'software development Nigeria',
     'digital product studio',

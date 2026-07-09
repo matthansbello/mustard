@@ -38,7 +38,7 @@ function Footer() {
             </div>
             <p>
               A digital product studio engineering future-ready web, product,
-              and brand experiences from Jos, Nigeria to the world.
+              brand, IT, and cybersecurity experiences from Jos, Nigeria to the world.
             </p>
             <div className="foot-social">
               <a

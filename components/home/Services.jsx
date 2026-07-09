@@ -1,8 +1,11 @@
 'use client';
 import React from 'react';
 import data from '@/data/services';
-import { Navigation } from 'swiper';
+import { Autoplay, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+const AUTOPLAY_DELAY = 5500;
+const SLIDE_SPEED = 1400;
 
 const SERVICE_ICONS = {
   'Product Management': (
@@ -40,14 +43,33 @@ const SERVICE_ICONS = {
       <rect x="18" y="12" width="12" height="18" rx="2" strokeWidth="2.2" />
     </svg>
   ),
+  'Information Technology (IT)': (
+    <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+      <rect x="8" y="10" width="32" height="22" rx="3" strokeWidth="2.2" />
+      <path d="M16 38h16M24 32v6" strokeWidth="2.2" strokeLinecap="round" />
+      <path d="M14 18h20M14 24h12" strokeWidth="2.2" strokeLinecap="round" />
+    </svg>
+  ),
+  'Cybersecurity Services': (
+    <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+      <path d="M24 6l14 6v10c0 9-6 15-14 20C16 37 10 31 10 22V12l14-6z" strokeWidth="2.2" strokeLinejoin="round" />
+      <path d="M18 23l4 4 8-8" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  ),
 };
 
 function Services() {
   const swiperOptions = {
-    modules: [Navigation],
+    modules: [Navigation, Autoplay],
     loop: true,
     spaceBetween: 28,
+    speed: SLIDE_SPEED,
     slidesPerView: 3,
+    autoplay: {
+      delay: AUTOPLAY_DELAY,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
     breakpoints: {
       0: { slidesPerView: 1 },
       640: { slidesPerView: 1 },

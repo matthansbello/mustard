@@ -49,7 +49,7 @@ function Intro() {
                     <span className="k">Years Combined</span>
                   </div>
                   <div className="am-fact glass-panel reveal">
-                    <span className="v grad-text">4</span>
+                    <span className="v grad-text">6</span>
                     <span className="k">Core Services</span>
                   </div>
                 </div>

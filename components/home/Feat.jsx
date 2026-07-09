@@ -7,6 +7,8 @@ const IMAGES = [
   '/assets/imgs/serv-img/productdevelopment|mustardhq.webp',
   '/assets/imgs/serv-img/services|mustardhq.webp',
   '/assets/imgs/serv-img/branding|mustardhq.webp',
+  '/assets/imgs/serv-img/1.jpg',
+  '/assets/imgs/serv-img/2.jpg',
 ];
 
 function Feat() {
@@ -28,8 +30,8 @@ function Feat() {
             </h3>
             <p className="mt-30">
               We architect ecosystems and strategy that give you operational
-              mastery and digital stewardship — long-term, robust solutions you
-              fully own and control.
+              mastery, IT reliability, and cybersecurity confidence — long-term,
+              robust solutions you fully own and control.
             </p>
             <a
               href="/about"

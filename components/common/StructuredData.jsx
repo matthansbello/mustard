@@ -81,6 +81,8 @@ export function ProfessionalServiceSchema() {
       'Branding',
       'Product Management',
       'Mobile App Development',
+      'Information Technology (IT)',
+      'Cybersecurity Services',
     ].map((s) => ({
       '@type': 'Offer',
       itemOffered: { '@type': 'Service', name: s },

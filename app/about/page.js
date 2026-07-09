@@ -15,8 +15,8 @@ export const metadata = createPageMetadata({
   title: 'About',
   path: '/about',
   description:
-    'Meet MustardHQ — a full-service tech and media studio in Jos, Nigeria building web, product, and brand experiences with excellence, ownership, and long-term partnership.',
-  keywords: ['about MustardHQ', 'digital studio Jos', 'tech agency team'],
+    'Meet MustardHQ — a full-service tech and media studio in Jos, Nigeria building web, product, brand, IT, and cybersecurity solutions with excellence, ownership, and long-term partnership.',
+  keywords: ['about MustardHQ', 'digital studio Jos', 'tech agency team', 'IT services Nigeria', 'cybersecurity services'],
 });
 
 export default function About() {

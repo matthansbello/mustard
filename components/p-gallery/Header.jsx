@@ -44,7 +44,7 @@ function Header() {
         <div className="ph-meta">
           <div>
             <span className="k">Focus</span>
-            <span className="v">Web · Product · Brand</span>
+            <span className="v">Web · Product · Brand · IT · Security</span>
           </div>
           <div>
             <span className="k">Shipped</span>

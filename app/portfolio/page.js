@@ -9,8 +9,8 @@ export const metadata = createPageMetadata({
   title: 'Portfolio',
   path: '/portfolio',
   description:
-    'Explore MustardHQ\u2019s portfolio of shipped work — web design, web development, product, and branding projects delivered for clients across Nigeria and beyond.',
-  keywords: ['MustardHQ portfolio', 'web design portfolio', 'case studies Nigeria'],
+    'Explore MustardHQ\u2019s portfolio of shipped work — web design, web development, product, branding, IT, and cybersecurity projects delivered for clients across Nigeria and beyond.',
+  keywords: ['MustardHQ portfolio', 'web design portfolio', 'case studies Nigeria', 'IT services portfolio', 'cybersecurity projects'],
 });
 
 export default function PortfolioPage() {
